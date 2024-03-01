@@ -1,0 +1,23 @@
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo na horizontal */
+     gap: 30px;/* Espaçamento entre os elementos */
+  }
+  
+  .post {
+    margin-top: 20px !important;
+    width: 60%; /* Largura do contêiner de postagem */
+    margin-right: 20px; /* Espaçamento à direita para separar da coluna de sugestões */
+  }
+  
+  .sugestoes {
+    width: 30%; /* Largura da coluna de sugestões */
+    padding: 20px;
+    background-color: #f0f0f0; /* Cor de fundo da coluna de sugestões */
+    border-radius: 8px; /* Borda arredondada */
+  }
+  

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  :root {
+    --primary-color: #05CBFA; /* Cor principal */
+    --secondary-color: #FFFFFF; /* Cor secundária para o modo light */
+    --background-color: #FFFFFF; /* Cor de fundo padrão */
+    --text-color: #000000; /* Cor do texto padrão */
+  }
+  
+  /* Modo dark */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #121212;
+      --text-color: #FFFFFF;
+      --secondary-color: #1f1f1f; /* Cor secundária para o modo dark */
+    }
+  }
+  
+  /* Aplicar estilos globais */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Estilize aqui seus componentes conforme necessário */
+  

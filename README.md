@@ -11,7 +11,7 @@ Para executar este projeto localmente, siga os passos abaixo:
 1. Clone o repositório em sua máquina local:
 
     ```
-    git clone https://github.com/seu-nome-de-usuário/monkphy.git
+    git clone https://github.com/wesioC/monkphy.git
     ```
 
 2. Navegue até o diretório do projeto:

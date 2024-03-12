@@ -16,14 +16,16 @@ const StyledCard = styled(Card)({
   margin: 'auto',
   width: '100%',
   '@media (max-width: 700px)': {
+    marginLeft: 35,
     marginTop: 25,
-    maxWidth: 220,
+    maxWidth: 280,
     marginRight:50,
     
   },
   '@media (min-width: 600px)': {
+    marginLeft: 55,
     marginTop: 25,
-    minWidth: 320,
+    minWidth: 300,
     maxWidth: 450, 
   },
   '&.MuiPaper-root': {

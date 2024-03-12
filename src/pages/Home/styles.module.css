@@ -13,7 +13,8 @@
 
 .post {
   align-items: center; 
-  width: 100%; /* Largura total do espaço disponível para os posts */
+  margin: auto;
+   /* Largura total do espaço disponível para os posts */
 }
 
 .suggestion {

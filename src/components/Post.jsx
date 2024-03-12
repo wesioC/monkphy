@@ -23,9 +23,8 @@ const StyledCard = styled(Card)({
   },
   '@media (min-width: 600px)': {
     marginTop: 25,
-    marginLeft: 55,
     minWidth: 320,
-    maxWidth: 450,
+    maxWidth: 450, 
   },
   '&.MuiPaper-root': {
     bgcolor: 'background.default',

@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '../../components/Navbar.jsx';
 import { Post } from '../../components/Post.jsx';
 import Styles from './styles.module.css';
+import { Suggestion } from '../../components/Suggestion.jsx';
 
 function Home() {
-
   return (
     <>
-      <Navbar />
+
       <div className={Styles.container}>
+        <div className={Styles.nav}>
+          <Navbar />
+        </div>
         <div className={Styles.post}>
-            <Post/>
+          <Post />
+        </div>
+        <div className={Styles.suggestion}>
+          <Suggestion />
         </div>
       </div>
     </>

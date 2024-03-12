@@ -13,13 +13,18 @@ import FavoriteButton from './FavoriteButton';
 
 const StyledCard = styled(Card)({
   maxWidth: 500,
-  width: '100%',
   margin: 'auto',
+  width: '100%',
   '@media (max-width: 700px)': {
-    maxWidth: 330,
-    marginLeft: 52,
+    marginTop: 25,
+    maxWidth: 220,
+    marginRight:50,
+    
   },
   '@media (min-width: 600px)': {
+    marginTop: 25,
+    marginLeft: 55,
+    minWidth: 320,
     maxWidth: 450,
   },
   '&.MuiPaper-root': {

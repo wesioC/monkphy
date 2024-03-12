@@ -10,7 +10,7 @@ const StyledCard = styled(Card)({
   margin: 'auto',
   '@media (max-width: 700px)': {
     minWidth: 100,
-    marginLeft: 12,
+    marginLeft: 0,
     marginTop: 15,
   },
   '@media (min-width: 600px)': {
@@ -25,43 +25,7 @@ const StyledCard = styled(Card)({
   },
 });
 
-function TimePosted(dataPublicacao) {
-  const dataAtual = new Date(); // Obtém a data atual
-  const dataPublicacaoObj = new Date(dataPublicacao); // Converte a data de publicação para um objeto de data
 
-  // Calcula a diferença entre as datas em milissegundos
-  const diferencaEmMilissegundos = dataAtual - dataPublicacaoObj;
-
-  // Converte a diferença para dias, horas, minutos, segundos
-  const segundos = Math.floor(diferencaEmMilissegundos / 1000);
-  const minutos = Math.floor(segundos / 60);
-  const horas = Math.floor(minutos / 60);
-  const dias = Math.floor(horas / 24);
-  const meses = Math.floor(dias / 24);
-  const anos = Math.floor(meses / 12);
-
-  // Retorna o tempo decorrido formatado
-  if (anos > 0) {
-    return `${anos} a`;
-  }
-  else if (meses < 12) {
-    return `${meses} m`;
-  }
-  else if (dias > 0 && dias < 30) {
-    return `${dias} d`;
-  } else if (horas > 0) {
-    return `${horas} h`;
-  } else if (minutos > 0) {
-    return `${minutos} min`;
-  } else {
-    return `agora`;
-  }
-}
-
-// Exemplo de uso
-/* const dataPublicacao = '2024-02-26T12:00:00'; // Exemplo de data de publicação
-const tempoDecorrido = calcularTempoDecorrido(dataPublicacao);
-console.log(tempoDecorrido); // Saída: Publicado há 1 dia */
 
 export function PostExplore() {
   const [gifData, setGifData] = React.useState(null);

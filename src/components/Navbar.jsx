@@ -86,7 +86,7 @@ export default function Navbar() {
   });
 
   // Imagem do logo a ser usada
-  const logoImage = isMobile ? '/src/assets/monkphyBlueSm.png' : '/src/assets/monkphyBlue.png';
+  const logoImage = isMobile ? 'https://github.com/wesioC/monkphy/blob/main/src/assets/monkphyBlueSm.png?raw=true' : 'https://github.com/wesioC/monkphy/blob/main/src/assets/monkphyBlue.png?raw=true';
   const tam = isMobile ? '40px' : '120px';
 
   // Array contendo as informações de texto, ícone e rota para cada item da lista

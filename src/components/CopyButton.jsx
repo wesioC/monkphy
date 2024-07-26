@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import LaunchIcon from '@mui/icons-material/Launch';
 import Tooltip from '@mui/material/Tooltip';
 
+// eslint-disable-next-line react/prop-types
 const CopyURLButton = ({ urlToCopy }) => {
   const [copied, setCopied] = useState(false);
 

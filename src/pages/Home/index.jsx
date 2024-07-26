@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from '../../components/Navbar.jsx';
 import { Post } from '../../components/Post.jsx';
 import Styles from './styles.module.css';

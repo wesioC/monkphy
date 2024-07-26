@@ -75,9 +75,9 @@ export default function Navbar() {
     setOpen(prefersDesktop); // Atualiza o estado do drawer quando o tamanho da tela muda
   }, [prefersDesktop]);
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  // const handleDrawerClose = () => {
+  //   setOpen(false);
+  // };
 
   const appliedTheme = createTheme({
     palette: {

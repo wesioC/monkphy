@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar.jsx';
 import { PostExplore } from '../../components/PostExplore.jsx';
 import Styles from './styles.module.css';

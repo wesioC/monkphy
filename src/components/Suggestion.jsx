@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -20,7 +20,6 @@ const StyledCard = styled(Card)({
   '@media (min-width: 600px)': {
     minWidth: 100,
     maxWidth: 220,
-    
   },
   '&.MuiPaper-root': {
     bgcolor: 'background.default',
@@ -49,7 +48,7 @@ export function Suggestion() {
   return (
     <>
       {gifData && gifData.map((gif) => (
-        <StyledCard key={gif.id} sx={{marginTop:2}}>
+        <StyledCard key={gif.id} sx={{ marginTop: 2 }}>
           <CardHeader
             avatar={
               <Avatar
@@ -57,28 +56,28 @@ export function Suggestion() {
                 aria-label="recipe"
                 src={gif.user && gif.user.avatar_url ? gif.user.avatar_url : '/src/assets/avatar.png'}
               >
-                {gif.user && gif.user.username ? gif.user.username.charAt(0).toUpperCase() : gif.username = 'Anônimo'}
+                {gif.user && gif.user.username ? gif.user.username.charAt(0).toUpperCase() : 'A'}
               </Avatar>
             }
-            title={gif.username}
+            title={gif.user && gif.user.username ? gif.user.username : 'Anônimo'}
             subheader={gif.user && gif.user.display_name ? gif.user.display_name : ''}
           />
           
           <CardActions disableSpacing sx={{ justifyContent: 'space-between' }}>
-            <div>
+            {gif.user && gif.user.profile_url && (
               <Button variant="text" href={gif.user.profile_url} target="_blank">Ver perfil</Button>
-            </div>
+            )}
             <div> 
-            {gif.user && gif.user.instagram_url && (
-              <IconButton aria-label="instagram" href={gif.user.instagram_url} target="_blank">
-                <InstagramIcon />
-              </IconButton>
-            )}
-            {gif.user && gif.user.website_url && (
-              <IconButton aria-label="site" href={gif.user.website_url} target="_blank">
-                <LanguageIcon />
-              </IconButton>
-            )}
+              {gif.user && gif.user.instagram_url && (
+                <IconButton aria-label="instagram" href={gif.user.instagram_url} target="_blank">
+                  <InstagramIcon />
+                </IconButton>
+              )}
+              {gif.user && gif.user.website_url && (
+                <IconButton aria-label="site" href={gif.user.website_url} target="_blank">
+                  <LanguageIcon />
+                </IconButton>
+              )}
             </div>
           </CardActions>
         </StyledCard>

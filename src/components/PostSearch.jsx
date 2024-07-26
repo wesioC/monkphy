@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -29,6 +29,7 @@ const StyledCard = styled(Card)({
 });
 
 
+// eslint-disable-next-line react/prop-types
 export function PostSearch({ searchText }) {
   const [gifData, setGifData] = React.useState(null);
 
